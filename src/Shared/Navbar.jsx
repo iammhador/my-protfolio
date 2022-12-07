@@ -1,29 +1,14 @@
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [state, setState] = useState(false);
-
-  // Replace javascript:void(0) path with your path
-  const navigation = [
-    { title: "Customers", path: "javascript:void(0)" },
-    { title: "Careers", path: "javascript:void(0)" },
-    { title: "Guides", path: "javascript:void(0)" },
-    { title: "Partners", path: "javascript:void(0)" },
-  ];
 
   return (
     <nav className="w-11/12 mx-auto border-b md:border-0 md:static bg-base-100 my-3">
       <div className="items-center px-4  mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
-          <a href="javascript:void(0)">
-            {/* <img
-              src="https://www.floatui.com/logo.svg"
-              width={120}
-              height={50}
-              alt="Float UI logo"
-            /> */}
-            iammhador
-          </a>
+          <Link to="/">iammhador</Link>
           <div className="md:hidden">
             <button
               className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
@@ -67,13 +52,61 @@ const Navbar = () => {
           }`}
         >
           <ul className="justify-end items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-            {navigation.map((item, idx) => {
-              return (
-                <li key={idx} className="text-accent hover:text-primary">
-                  <a href={item.path}>{item.title}</a>
-                </li>
-              );
-            })}
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "text-primary" : "text-accent hover:text-primary"
+                }
+              >
+                <span className="text-primary">00.</span> Home
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "text-primary" : "text-accent hover:text-primary"
+                }
+              >
+                <span className="text-primary">01.</span> About
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/portfolio"
+                className={({ isActive }) =>
+                  isActive ? "text-primary" : "text-accent hover:text-primary"
+                }
+              >
+                <span className="text-primary">02.</span> Portfolio
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "text-primary" : "text-accent hover:text-primary"
+                }
+              >
+                <span className="text-primary">03.</span> Contact
+              </NavLink>
+            </li>
+
+            <li>
+              <button className="text-accent hover:text-primary">
+                <a
+                  className="py-3 px-5 border border-primary rounded text-primary hover:bg-success"
+                  href="/src/Assets/iammhador-resume.pdf"
+                  download
+                >
+                  Resume
+                </a>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
