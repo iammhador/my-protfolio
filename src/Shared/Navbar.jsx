@@ -53,47 +53,30 @@ const Navbar = () => {
         >
           <ul className="justify-end items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
             <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive ? "text-primary" : "text-accent hover:text-primary"
-                }
-              >
+              <Link to="/" className="text-secondary hover:text-primary">
                 <span className="text-primary">00.</span> Home
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  isActive ? "text-primary" : "text-accent hover:text-primary"
-                }
-              >
+              <a href="#about" className="text-secondary hover:text-primary">
                 <span className="text-primary">01.</span> About
-              </NavLink>
+              </a>
             </li>
 
             <li>
-              <NavLink
-                to="/portfolio"
-                className={({ isActive }) =>
-                  isActive ? "text-primary" : "text-accent hover:text-primary"
-                }
+              <a
+                href="#portfolio"
+                className="text-secondary hover:text-primary"
               >
                 <span className="text-primary">02.</span> Portfolio
-              </NavLink>
+              </a>
             </li>
 
             <li>
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  isActive ? "text-primary" : "text-accent hover:text-primary"
-                }
-              >
+              <a href="#contact" className="text-secondary hover:text-primary">
                 <span className="text-primary">03.</span> Contact
-              </NavLink>
+              </a>
             </li>
 
             <li>

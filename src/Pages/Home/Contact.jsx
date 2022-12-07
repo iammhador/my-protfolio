@@ -2,13 +2,13 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="mb-32 w-5/6 mx-auto">
+    <div id="contact" className="mb-32 w-5/6 mx-auto">
       <div className="justify-center flex text-3xl font-bold items-center border-b-2 py-2 border-accent">
         <h3>
           <span className="text-primary mr-2 ">03. </span> Contact
         </h3>
       </div>
-      <div className="text-center mt-10 lg:w-1/2 md:w-full mx-auto">
+      <div className="text-center mt-10 lg:w-1/2 md:w-full mx-auto text-accent">
         <p>
           As you know, I'm fresher, so if you want to give me some opportunity
           or have any queries, feel free to reach me.
