@@ -33,7 +33,7 @@ const portfolioInfo = [
 
 const Portfolio = () => {
   return (
-    <div id="portfolio" className="my-32 w-5/6 mx-auto">
+    <div id="portfolio" className="lg:my-32 my-20 w-5/6 mx-auto">
       <div className="justify-end flex text-3xl font-bold items-center border-b-2 py-2 border-accent">
         <span className="text-primary mr-2 ">02. </span> Portfolio
       </div>

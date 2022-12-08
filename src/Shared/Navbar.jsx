@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [state, setState] = useState(false);
 
   return (
     <nav className="w-11/12 mx-auto border-b md:border-0 md:static bg-base-100 my-3">
-      <div className="items-center px-4  mx-auto md:flex md:px-8">
+      <div className="items-center px-4  mx-auto md:flex md:px-10 lg:px-0 ">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
-          <Link to="/">iammhador</Link>
+          <Link to="/">
+            iammh<span className="text-primary">a</span>dor
+          </Link>
           <div className="md:hidden">
             <button
               className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
@@ -17,7 +19,7 @@ const Navbar = () => {
               {state ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-6 w-6 text-secondary"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -30,7 +32,7 @@ const Navbar = () => {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-6 w-6 text-secondary"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -51,7 +53,7 @@ const Navbar = () => {
             state ? "block" : "hidden"
           }`}
         >
-          <ul className="justify-end items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+          <ul className="justify-end items-center space-y-8 md:flex md:space-x-6 md:space-y-0 my-10 lg:my-0">
             <li>
               <Link to="/" className="text-secondary hover:text-primary">
                 <span className="text-primary">00.</span> Home
