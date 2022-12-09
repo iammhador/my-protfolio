@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -8,8 +11,16 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
-    <footer className="footer footer-center p-10 bg-base-100 text-accent rounded">
+    <footer
+      data-aos="fade-down"
+      className="footer footer-center p-10 bg-base-100 text-accent rounded"
+    >
       <div>
         <div className="grid grid-flow-col gap-4">
           <a

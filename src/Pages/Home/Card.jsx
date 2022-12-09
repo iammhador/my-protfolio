@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Card = ({ port }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   const {
     name,
     description,
@@ -11,9 +19,10 @@ const Card = ({ port }) => {
     images,
   } = port;
   return (
-    // className="border-4 border-accent py-3 px-3 rounded-md"
     <div>
-      <img src={images} alt="" />
+      <div className="w-full h-52 overflow-y-auto">
+        <img src={images} alt={name} className="hover:grayscale-0" />
+      </div>
       <div className="bg-base-300 py-5 lg:mb-0 mb-5">
         <div>
           <div className="divider text-secondary uppercase text-lg font-medium tracking-widest">

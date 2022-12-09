@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
-    <div id="about" className="lg:mb-32 my-20 w-5/6 mx-auto">
+    <div
+      data-aos="fade-down"
+      id="about"
+      className="lg:mb-32 my-20 w-5/6 mx-auto"
+    >
       <div className="flex text-3xl font-bold items-center border-b-2 py-2 border-accent">
         <h3>
           <span className="text-primary mr-2">01. </span> About Me
@@ -10,7 +21,7 @@ const About = () => {
       </div>
       <div>
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10 mt-10">
-          <div className="">
+          <div data-aos="fade-right" className="">
             <p className="text-accent mb-5 ">
               Hey! I'm Mehedy Hasan Ador and I love to explore myself. I explore
               lots of fields. At some moments, my interest grows in the
@@ -33,7 +44,7 @@ const About = () => {
             </p>
           </div>
 
-          <div>
+          <div data-aos="fade-left">
             <div className="flex flex-wrap justify-end">
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
                 HTML

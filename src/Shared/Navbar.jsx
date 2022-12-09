@@ -85,7 +85,7 @@ const Navbar = () => {
               <button className="text-accent hover:text-primary">
                 <a
                   className="py-3 px-5 border border-primary rounded text-primary hover:bg-success"
-                  href="/src/Assets/iammhador-resume.pdf"
+                  href="iammhador-resume.pdf"
                   download
                 >
                   Resume

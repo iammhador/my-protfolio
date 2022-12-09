@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "./Card";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const portfolioInfo = [
   {
     name: "Bookmart",
@@ -9,7 +10,7 @@ const portfolioInfo = [
     tools: ["React", "Tailwind", "MongoDB", "Express"],
     githubClientSite: "https://github.com/iammhador/bookmart-client",
     githubServerSite: "https://github.com/iammhador/bookmart-server",
-    images: "https://i.ibb.co/JsZrFRC/bookmart.jpg",
+    images: "https://i.ibb.co/wQwXfgy/bookmart-long.png",
   },
   {
     name: "Fly With Me",
@@ -18,7 +19,7 @@ const portfolioInfo = [
     tools: ["React", "Firebase", "Express", "MongoDB"],
     githubClientSite: "https://github.com/iammhador/a11-fly-with-me-client",
     githubServerSite: "https://github.com/iammhador/a11-fly-with-me-server",
-    images: "https://i.ibb.co/Zzykqyy/fly-With-Me.png",
+    images: "https://i.ibb.co/7rH6jp6/fly-with-me-long.png",
   },
   {
     name: "Sikho Sobai",
@@ -27,13 +28,22 @@ const portfolioInfo = [
     tools: ["React", "Tailwind", "Firebase", "Express"],
     githubClientSite: "https://github.com/iammhador/sikho_sobai-client",
     githubServerSite: "https://github.com/iammhador/sikho_sobai-server",
-    images: "https://i.ibb.co/DLPrz41/sikho-Sobai.jpg",
+    images: "https://i.ibb.co/C0PFC5R/sikho-sobai-long.png",
   },
 ];
 
 const Portfolio = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
-    <div id="portfolio" className="lg:my-32 my-20 w-5/6 mx-auto">
+    <div
+      data-aos="fade-down"
+      id="portfolio"
+      className="lg:my-32 my-20 w-5/6 mx-auto"
+    >
       <div className="justify-end flex text-3xl font-bold items-center border-b-2 py-2 border-accent">
         <span className="text-primary mr-2 ">02. </span> Portfolio
       </div>

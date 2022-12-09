@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Banner = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
-    <div className="my-20 md:my-20 lg:mt-20 w-5/6 mx-auto lg:h-screen">
+    <div
+      data-aos="fade-down"
+      className="my-20 md:my-20 lg:mt-20 w-5/6 mx-auto lg:h-screen"
+    >
       <div className="my-5">
         <h3 className="text-primary text-lg font-normal">Hello, my name is</h3>
         <h1 className="text-neutral text-3xl my-3 lg:text-7xl md:text-3xl font-extrabold lg:my-8">
@@ -23,7 +34,7 @@ const Banner = () => {
       <div className="my-10">
         <a
           className="py-2 px-2 lg:py-3 lg:px-5 border border-primary rounded text-primary hover:bg-success"
-          href="/src/Assets/iammhador-resume.pdf"
+          href="iammhador-resume.pdf"
           download
         >
           Resume
