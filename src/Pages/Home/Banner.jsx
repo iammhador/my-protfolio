@@ -33,11 +33,11 @@ const Banner = () => {
       </div>
       <div className="my-10">
         <a
-          className="py-2 px-2 lg:py-3 lg:px-5 border border-primary rounded text-primary hover:bg-success"
-          href="iammhador-resume.pdf"
-          download
+          className="py-2 px-2 lg:py-3 lg:px-5 border border-secondary rounded text-secondary hover:bg-success"
+          href="https://www.linkedin.com/in/iammhador/"
+          target="blank"
         >
-          Resume
+          LinkedIn
         </a>
       </div>
     </div>

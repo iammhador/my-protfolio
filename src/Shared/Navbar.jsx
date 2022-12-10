@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="w-11/12 mx-auto border-b md:border-0 md:static bg-base-100 my-3">
       <div className="items-center px-4  mx-auto md:flex md:px-10 lg:px-0 ">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
-          <Link to="/">
+          <Link to="/" className="font-semibold text-lg">
             iammh<span className="text-primary">a</span>dor
           </Link>
           <div className="md:hidden">
@@ -56,13 +56,13 @@ const Navbar = () => {
           <ul className="justify-end items-center space-y-8 md:flex md:space-x-6 md:space-y-0 my-10 lg:my-0">
             <li>
               <Link to="/" className="text-secondary hover:text-primary">
-                <span className="text-primary">00.</span> Home
+                Home
               </Link>
             </li>
 
             <li>
               <a href="#about" className="text-secondary hover:text-primary">
-                <span className="text-primary">01.</span> About
+                About
               </a>
             </li>
 
@@ -71,20 +71,20 @@ const Navbar = () => {
                 href="#portfolio"
                 className="text-secondary hover:text-primary"
               >
-                <span className="text-primary">02.</span> Portfolio
+                Portfolio
               </a>
             </li>
 
             <li>
               <a href="#contact" className="text-secondary hover:text-primary">
-                <span className="text-primary">03.</span> Contact
+                Contact
               </a>
             </li>
 
             <li>
               <button className="text-accent hover:text-primary">
                 <a
-                  className="py-3 px-5 border border-primary rounded text-primary hover:bg-success"
+                  className="py-3 px-5 border border-secondary rounded text-secondary hover:bg-success"
                   href="iammhador-resume.pdf"
                   download
                 >

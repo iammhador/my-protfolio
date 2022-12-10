@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { VscGithubAlt } from "react-icons/vsc";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Card = ({ port }) => {
   useEffect(() => {
@@ -48,13 +50,20 @@ const Card = ({ port }) => {
           </div>
         </div>
 
-        <div className="my-8 text-center">
-          <Link
-            className="py-2 px-3 border border-accent rounded text-primary hover:bg-success"
-            to={liveSiteLink}
-          >
-            Live Link
-          </Link>
+        <div className="my-8 text-center flex justify-center">
+          <div className="flex justify-center items-center py-2 px-3 border-2 border-accent rounded text-base text-secondary hover:bg-success mx-2">
+            <VscGithubAlt className="mr-1 font-extrabold text-xl" />
+            <a href={githubClientSite} target="blank">
+              GitHub
+            </a>
+          </div>
+
+          <div className="flex justify-center items-center py-2 px-3 border-2 border-accent rounded text-base text-secondary  hover:bg-success mx-2">
+            <FaExternalLinkAlt className="mr-1 font-semibold text-sm" />
+            <a href={liveSiteLink} target="blank">
+              Live
+            </a>
+          </div>
         </div>
       </div>
     </div>

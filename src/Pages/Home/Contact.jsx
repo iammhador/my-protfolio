@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Form from "./Form";
 const Contact = () => {
   useEffect(() => {
     AOS.init({
@@ -11,7 +12,7 @@ const Contact = () => {
     <div
       data-aos="fade-down"
       id="contact"
-      className="lg:mb-32 my-20 w-5/6 mx-auto"
+      className="lg:mb-32 my-20 w-11/12 mx-auto"
     >
       <div className="justify-center flex text-3xl font-bold items-center border-b-2 py-2 border-accent">
         <h3>
@@ -24,13 +25,7 @@ const Contact = () => {
           or have any queries, feel free to reach me.
         </p>
         <div className="mt-10">
-          <a
-            className="py-4 px-5 border border-primary rounded text-primary hover:bg-success mt-10"
-            href="mailto:iammhador@gmail.com"
-            rel="noopener noreferrer"
-          >
-            Say Hello
-          </a>
+          <Form />
         </div>
       </div>
     </div>
