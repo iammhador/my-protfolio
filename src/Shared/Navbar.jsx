@@ -61,6 +61,12 @@ const Navbar = () => {
             </li>
 
             <li>
+              <Link to="/blog" className="text-secondary hover:text-primary">
+                Blog
+              </Link>
+            </li>
+
+            <li>
               <a href="#about" className="text-secondary hover:text-primary">
                 About
               </a>

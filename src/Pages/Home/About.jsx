@@ -21,7 +21,7 @@ const About = () => {
       </div>
       <div>
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10 mt-10">
-          <div data-aos="fade-right" className="">
+          <div data-aos="fade-down" className="">
             <p className="text-accent mb-5 ">
               Hey! I'm Mehedy Hasan Ador and I love to explore myself. I explore
               lots of fields. At some moments, my interest grows in the
@@ -44,7 +44,7 @@ const About = () => {
             </p>
           </div>
 
-          <div data-aos="fade-left">
+          <div data-aos="fade-down">
             <div className="flex flex-wrap justify-end">
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
                 HTML
