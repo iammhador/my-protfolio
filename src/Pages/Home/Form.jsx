@@ -18,7 +18,6 @@ function Form() {
           target="blank"
         >
           <SiGooglemaps className="font-bold text-2xl" />
-
           <span class="mt-2 text-sm">Dhaka, Bangladesh</span>
         </a>
 
@@ -27,9 +26,8 @@ function Form() {
           class="flex flex-col items-center px-4 py-3 transition-colors duration-300 transform rounded-md text-secondary hover:bg-base-300"
           target="blank"
         >
-          <IoLogoWhatsapp className="font-bold text-2xl" />
-
-          <span class="mt-2 text-sm">Whatsapp</span>
+          <FaFacebookMessenger className="font-bold text-2xl" />
+          <span class="mt-2 text-sm">Messenger</span>
         </a>
 
         <a
@@ -37,9 +35,8 @@ function Form() {
           class="flex flex-col items-center px-4 py-3 transition-colors duration-300 transform rounded-md text-secondary hover:bg-base-300"
           target="blank"
         >
-          <FaFacebookMessenger className="font-bold text-2xl" />
-
-          <span class="mt-2 text-sm">Messenger</span>
+          <IoLogoWhatsapp className="font-bold text-2xl" />
+          <span class="mt-2 text-sm">Whatsapp</span>
         </a>
       </div>
 
