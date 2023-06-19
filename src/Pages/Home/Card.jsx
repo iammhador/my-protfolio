@@ -11,15 +11,8 @@ const Card = ({ port }) => {
       duration: 2000,
     });
   }, []);
-  const {
-    name,
-    description,
-    tools,
-    liveSiteLink,
-    githubClientSite,
-    githubServerSite,
-    images,
-  } = port;
+  const { name, description, tools, liveSiteLink, githubClientSite, images } =
+    port;
   return (
     <div>
       <div className="w-full h-52 overflow-y-auto">

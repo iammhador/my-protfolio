@@ -30,6 +30,16 @@ const portfolioInfo = [
     githubServerSite: "https://github.com/iammhador/sikho_sobai-server",
     images: "https://i.ibb.co/C0PFC5R/sikho-sobai-long.png",
   },
+  {
+    name: "Info Card Official",
+    description: "Manage your social media in one platform",
+    liveSiteLink: "https://info-card-official.netlify.app/",
+    tools: ["React", "MongoDB", "Express", "Firebase"],
+    githubClientSite: "https://github.com/iammhador/Client-Info-Card",
+    githubServerSite: "https://github.com/iammhador/Server-Info-Card",
+    images:
+      "https://i.ibb.co/VTVrZRz/Fire-Shot-Capture-036-Info-Card-Official-info-card-official-netlify-app.png",
+  },
 ];
 
 const Portfolio = () => {
@@ -45,7 +55,7 @@ const Portfolio = () => {
       className="lg:my-32 my-20 w-5/6 mx-auto"
     >
       <div className="justify-end flex text-3xl font-bold items-center border-b-2 py-2 border-accent">
-        <span className="text-primary mr-2 ">02. </span> Portfolio
+        <span className="text-primary mr-2 ">02. </span> Project
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 mt-10">
         {portfolioInfo.map((port, i) => (

@@ -83,6 +83,14 @@ const About = () => {
               </p>
 
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
+                Mongoose
+              </p>
+
+              <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
+                Typescript
+              </p>
+
+              <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
                 Firebase
               </p>
 

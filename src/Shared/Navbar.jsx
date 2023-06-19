@@ -60,11 +60,11 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link to="/blog" className="text-secondary hover:text-primary">
                 Blog
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <a href="#about" className="text-secondary hover:text-primary">
@@ -77,7 +77,7 @@ const Navbar = () => {
                 href="#portfolio"
                 className="text-secondary hover:text-primary"
               >
-                Portfolio
+                Project
               </a>
             </li>
 
