@@ -40,10 +40,10 @@ function Form() {
         </a>
       </div>
 
-      <form onSubmit={handleSubmit} class="mt-6 ">
+      <form onSubmit={handleSubmit} class="mt-6">
         <div class="items-center -mx-2 md:flex">
-          <div class="w-full mx-2">
-            <label class="block mb-2 text-sm font-medium text-secondary">
+          <div class="w-full md:mx-2 mx-0">
+            <label class="block mb-2 text-sm font-medium text-gray-600 md:mx-auto dark:text-gray-200">
               Name
             </label>
 
@@ -53,13 +53,13 @@ function Form() {
             />
           </div>
 
-          <div class="w-full mx-2 mt-4 md:mt-0">
-            <label class="block mb-2 text-sm font-medium text-secondary">
-              E-mail
+          <div class="w-full md:mx-2 mx-0 mt-4 md:mt-0">
+            <label class="block mb-2 text-sm font-medium text-gray-600 md:mx-auto dark:text-gray-200">
+              Email
             </label>
 
             <input
-              class="block w-full px-4 py-2 text-secondary bg-base-200 border rounded-md border-gray-500 "
+              class="block w-full px-4 py-2 text-secondary bg-base-200 border rounded-md border-gray-500"
               id="email"
               type="email"
               name="email"
@@ -80,7 +80,7 @@ function Form() {
           <textarea
             id="message"
             name="message"
-            class="block w-full h-40 px-4 py-2 text-white bg-base-200 border border-gray-500 rounded-md  focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
+            class="block w-full h-40 py-2 px-4 text-white bg-base-200 border border-gray-500 rounded-md focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
           ></textarea>
           <ValidationError
             prefix="Message"

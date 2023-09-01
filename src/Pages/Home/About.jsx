@@ -71,6 +71,14 @@ const About = () => {
               </p>
 
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
+                Next JS
+              </p>
+
+              <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
+                Redux
+              </p>
+
+              <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
                 Express
               </p>
 
@@ -84,6 +92,14 @@ const About = () => {
 
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
                 Mongoose
+              </p>
+
+              <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
+                Postgres
+              </p>
+
+              <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
+                Prisma
               </p>
 
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
