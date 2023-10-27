@@ -25,11 +25,10 @@ const Banner = () => {
       </div>
       <div className="w-10/12 lg:w-1/2">
         <p className="text-accent">
-          I'm a react.js-focused web developer. Although front-end is my primary
-          emphasis, I also strive to keep up with new technology. I'm
-          concentrating on learning{" "}
-          <span className="text-primary">MERN Stack</span> development at the
-          moment.
+          I'm a web developer who specializes in react.js. Although front-end
+          development is my major focus, I constantly attempt to stay current
+          with new technologies. At the present, I'm focusing on learning{" "}
+          <span className="text-primary">MERN Stack</span> development.
         </p>
       </div>
       <div className="my-10">

@@ -67,6 +67,10 @@ const About = () => {
               </p>
 
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
+                Typescript
+              </p>
+
+              <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
                 React JS
               </p>
 
@@ -79,11 +83,11 @@ const About = () => {
               </p>
 
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
-                Express
+                Node JS
               </p>
 
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
-                Node JS
+                Express
               </p>
 
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
@@ -103,23 +107,11 @@ const About = () => {
               </p>
 
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
-                Typescript
-              </p>
-
-              <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
                 Firebase
               </p>
 
               <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
-                Wordpress
-              </p>
-
-              <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
-                Elementor
-              </p>
-
-              <p className="py-3 px-5 border-2 border-accent rounded text-accent mr-3 mb-5">
-                Divi
+                GitHub
               </p>
             </div>
           </div>

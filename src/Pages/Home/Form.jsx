@@ -7,7 +7,12 @@ import { FaFacebookMessenger } from "react-icons/fa";
 function Form() {
   const [state, handleSubmit] = useForm("xlevqaab");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <p>
+        Your message has been sent. I will reply to your email at the earliest
+        convenience.
+      </p>
+    );
   }
   return (
     <section class="w-full px-6 py-4 mx-auto bg-transparent">

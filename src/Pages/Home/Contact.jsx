@@ -21,8 +21,8 @@ const Contact = () => {
       </div>
       <div className="text-center mt-10 lg:w-1/2 md:w-full mx-auto text-accent">
         <p>
-          As you know, I'm fresher, so if you want to give me some opportunity
-          or have any queries, feel free to reach me.
+          If you want to give me some opportunity or have any queries, feel free
+          to reach me.
         </p>
         <div className="mt-10">
           <Form />
