@@ -10,16 +10,18 @@ const portfolioInfo = [
     tools: ["Next JS", "Ant Design", "Prisma", "PostgreSQL"],
     githubClientSite: "https://github.com/iammhador/Tiffin_Bati_Frontend",
     githubServerSite: "https://github.com/iammhador/Tiffin_Bati_Backend",
-    images: "https://i.ibb.co/dB25XS8/desktop-home-page.png",
+    images:
+      "https://i.ibb.co/RgzcMjF/Fire-Shot-Capture-064-Tiffin-Bati-Homemade-Flavors-at-Your-Doorstep-tiffin-bati-f-vercel-app.png",
   },
   {
-    name: "Bookmart",
-    description: "Second Hand Book Selling Website",
-    liveSiteLink: "https://bookmart-f2207.web.app/",
-    tools: ["React", "Tailwind", "MongoDB", "Express"],
-    githubClientSite: "https://github.com/iammhador/bookmart-client",
-    githubServerSite: "https://github.com/iammhador/bookmart-server",
-    images: "https://i.ibb.co/wQwXfgy/bookmart-long.png",
+    name: "Build My Rig",
+    description: "PC Builder",
+    liveSiteLink: "https://build-my-rig-six.vercel.app/",
+    tools: ["React", "Redux", "Tailwind", "MongoDB"],
+    githubClientSite: "https://github.com/iammhador/build-my-rid",
+    githubServerSite: "https://github.com/iammhador/build-my-rid-server",
+    images:
+      "https://i.ibb.co/GRjJ5mj/Fire-Shot-Capture-062-Build-My-Rig-build-my-rig-six-vercel-app.png",
   },
   {
     name: "Info Card Official",
@@ -30,6 +32,15 @@ const portfolioInfo = [
     githubServerSite: "https://github.com/iammhador/Server-Info-Card",
     images:
       "https://i.ibb.co/VTVrZRz/Fire-Shot-Capture-036-Info-Card-Official-info-card-official-netlify-app.png",
+  },
+  {
+    name: "Bookmart",
+    description: "Second Hand Book Selling Website",
+    liveSiteLink: "https://bookmart-f2207.web.app/",
+    tools: ["React", "Tailwind", "MongoDB", "Express"],
+    githubClientSite: "https://github.com/iammhador/bookmart-client",
+    githubServerSite: "https://github.com/iammhador/bookmart-server",
+    images: "https://i.ibb.co/wQwXfgy/bookmart-long.png",
   },
   {
     name: "Fly With Me",

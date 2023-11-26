@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -91,8 +92,8 @@ const Navbar = () => {
               <button className="text-accent hover:text-primary">
                 <a
                   className="py-3 px-5 border border-secondary rounded text-secondary hover:bg-success"
-                  href="iammhador-resume.pdf"
-                  download
+                  href="https://drive.google.com/file/d/1SQe-AFSe54gc3WQtGDyMUGdw5SgIjXFD/view?usp=sharing"
+                  target="_blank"
                 >
                   Resume
                 </a>

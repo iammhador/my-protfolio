@@ -36,7 +36,7 @@ function Form() {
         </a>
 
         <a
-          href="https://wa.me/+8801630995585"
+          href="https://wa.me/+8801576464484"
           class="flex flex-col items-center px-4 py-3 transition-colors duration-300 transform rounded-md text-secondary hover:bg-base-300"
           target="blank"
         >
